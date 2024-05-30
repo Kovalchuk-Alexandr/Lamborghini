@@ -1,0 +1,52 @@
+.quote {
+    margin-bottom: 100px;
+}
+
+.quote__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.quote__content {
+    display: grid;
+    gap: 30px;
+}
+
+.quote__titul {
+    font-size: 12px;
+    color: var(--gold);
+    margin-bottom: 3px;
+}
+
+.quote__name {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.quote__desc {
+    font-style: italic;
+}
+
+.quote__img {
+    justify-self: center;
+}
+
+@media (max-width: 680px) {
+    .quote {
+        margin-bottom: 40px;
+    }
+
+    .quote__grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .quote__content {
+        gap: 20px;
+    }
+
+    .quote__img {
+        grid-area: 1
+    }
+}

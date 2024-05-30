@@ -1,0 +1,77 @@
+.mobile-nav-button {
+	/* Reset for button */
+	cursor: pointer;
+	padding: 0;
+	margin-right: 3vw;
+	border: none;
+	background: transparent;
+	color: var(--black);
+
+	/* Nav icon styles*/
+	position: relative;
+	z-index: 999;
+	width: 44px;
+	height: 30px;
+	/* display: flex; */
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+@media (max-width: 820px){
+    .mobile-nav-button {
+        display: flex;
+    }
+}
+
+.mobile-nav-button__icon {
+	display: block;
+	position: relative;
+	width: 44px;
+	height: 4px;
+	background-color:  var(--black);
+}
+
+.mobile-nav-button__icon::after,
+.mobile-nav-button__icon::before {
+	position: absolute;
+	content: '';
+	width: 44px;
+	height: 4px;
+	background-color:  var(--black);
+    /* Трансформация при закрывании */
+	transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s;
+}
+
+.mobile-nav-button__icon.active::after,
+.mobile-nav-button__icon.active::before {
+	background-color: var(--white);
+}
+
+.mobile-nav-button__icon::before {
+	left: 0;
+	top: -12px;
+}
+
+.mobile-nav-button__icon::after {
+	left: 0;
+	top: 12px;
+}
+
+.mobile-nav-button__icon.active {
+	background-color: transparent;
+}
+
+.mobile-nav-button__icon.active::before {
+	transform: rotate(45deg) scale(0.75);
+	top: 0;
+    /* Трансформация при открывании */
+	transition: top 0.15s linear, transform 0.15s ease-in 0.15s;
+}
+
+.mobile-nav-button__icon.active::after {
+	transform: rotate(-45deg) scale(0.75);
+	top: 0;
+    /* Трансформация при открывании */
+	transition: top 0.15s linear, transform 0.15s ease-in 0.15s;
+}

@@ -1,0 +1,53 @@
+.portimao {
+    /* min-height: 890px; */
+    background-image: url('./../../images/portimao-bg.jpg');
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.portimao__grid  {
+    padding-top: 47px;
+    padding-bottom: 110px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    max-height: 100vh;
+}
+
+.portimao__content {
+    max-width: 434px;
+    flex-basis: 434px;
+    margin-bottom: 50px;
+}
+
+.portimao__title {
+    margin-bottom: 30px;
+}
+
+.portimao__text {
+}
+
+.portimao__img {
+    align-self: center;
+}
+
+@media (max-width: 820px) {
+    .portimao__grid  {
+        padding-top: 30px;
+        padding-bottom: 60px;
+        justify-content: space-evenly;
+
+        max-height: 100vh;
+    }
+
+    .portimao__content {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .portimao__title {
+        margin-bottom: 12px;
+    }
+}

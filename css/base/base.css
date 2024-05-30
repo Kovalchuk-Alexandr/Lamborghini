@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Impact', sans-serif;
+    src: url(./../fonts/impact.woff2);
+}
+
+* {
+    /* border: 1px solid lightgray; */
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--black);
+}
+
+/* Utility */
+
+.none {
+    display: none !important;
+}
+
+.visually-hidden {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    display: block;
+    margin-left: -10000px;
+    background: transparent;
+    font-size: 0;
+}
+
+
+/* Grid */
+.container--big {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container {
+    max-width: 930px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.title-1 {
+    color: #161414;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.title-3 {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.title-4 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.title-5 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--white);
+}
+
+@media (max-width: 1130px) {
+    .title-1 {
+        /* font-size: 26px; */
+    }
+}
+
+@media (max-width: 580px) {
+    .title-3 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .title-4 {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-3 {
+        font-size: 22px;
+        
+    }
+
+    .title-5 {
+        text-align: center;
+    }
+}

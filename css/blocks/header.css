@@ -1,0 +1,41 @@
+.header {
+    padding-top: 25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, #d8d4ca 0%, rgba(217, 217, 217, 0) 100%);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-list {
+    display: flex;
+    gap: 40px;
+
+    font-size: 15px;
+    color: var(--dark-grey);
+}
+
+.menu-short,
+.menu-btn {
+    display: none;
+}
+
+.menu-left {
+    padding-left: 25px;
+}
+
+.menu-right {
+    padding-right: 80px;
+}
+
+.nav__logo  {
+    padding: 0 21px 0 10px;
+}
+
+.menu-link {
+    color: var(--dark-grey);
+}
